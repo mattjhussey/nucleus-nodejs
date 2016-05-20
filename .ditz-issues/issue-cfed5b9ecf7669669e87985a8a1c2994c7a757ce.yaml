@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add unit testing
+desc: ""
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-20 20:38:01.503000 Z
+references: []
+
+id: cfed5b9ecf7669669e87985a8a1c2994c7a757ce
+log_events: 
+- - 2016-05-20 20:38:01.505000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

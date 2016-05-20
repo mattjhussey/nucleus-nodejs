@@ -1,0 +1,20 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add backend nodejs
+desc: |-
+  Set up an app to serve static and dynamic code in nodejs.
+  The backend could hook up to the front end model.
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-20 20:53:00.907000 Z
+references: []
+
+id: d540d2ca4024ef65e71f8f07c7ca8ba717042884
+log_events: 
+- - 2016-05-20 20:53:00.909000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

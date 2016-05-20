@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add HTML static analysis.
+desc: HTML Lint? nu-validator?
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-20 18:15:44.381000 Z
+references: []
+
+id: 747e94d0a758e6e9c175ded1f6de4ed5ca16c056
+log_events: 
+- - 2016-05-20 18:15:44.390000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

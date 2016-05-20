@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add React
+desc: Look at adding React as an extra UI tool.
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-20 20:36:10.075000 Z
+references: []
+
+id: 51515d2b1856d22b99e9af531dba7b637a66b0fa
+log_events: 
+- - 2016-05-20 20:36:10.080000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

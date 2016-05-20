@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add Angular
+desc: Add angular libraries. Angular-seed may be a good start for this.
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-20 18:00:49.534000 Z
+references: []
+
+id: 358aaac62c41c3c3c5947c0ba0d6711b220de798
+log_events: 
+- - 2016-05-20 18:00:49.535000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

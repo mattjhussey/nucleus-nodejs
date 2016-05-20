@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add CSS/SASS static analysis
+desc: ""
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-20 18:16:38.883000 Z
+references: []
+
+id: 4ea12802af9ac2b83d4603aace46effb86a2f309
+log_events: 
+- - 2016-05-20 18:16:38.885000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""
