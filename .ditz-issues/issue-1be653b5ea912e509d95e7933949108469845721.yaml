@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add server to protractor tests so that it the tests can be automated.
+desc: The protractor tests currently require a server to have been started. Add a step in the tests that starts a server (and stops it).
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-21 10:10:54.428000 Z
+references: []
+
+id: 1be653b5ea912e509d95e7933949108469845721
+log_events: 
+- - 2016-05-21 10:10:54.431000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

@@ -3,10 +3,10 @@ title: Add Angular
 desc: Add angular libraries. Angular-seed may be a good start for this.
 type: :task
 component: nodejsbaseline
-release: 
+release: "1.0"
 reporter: Matthew Hussey <matthew.hussey@googlemail.com>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2016-05-20 18:00:49.534000 Z
 references: []
 
@@ -15,4 +15,16 @@ log_events:
 - - 2016-05-20 18:00:49.535000 Z
   - Matthew Hussey <matthew.hussey@googlemail.com>
   - created
+  - ""
+- - 2016-05-20 21:03:51.291000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - changed status from unstarted to in progress
+  - ""
+- - 2016-05-21 10:09:17.820000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - closed with disposition fixed
+  - Angular has been added but protractor will not run without the server being started first. Pyditz issue added to fix this.
+- - 2016-05-21 10:09:43.855000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - assigned to release 1.0 from unassigned
   - ""

@@ -1,2 +1,9 @@
+# 3rd party libraries
+^app\/bower_components\/.*$
+^node_modules\/.*$
+
 # Ditz
 ^\.ditz-cache$
+
+# Logs
+^npm-debug\.log$
