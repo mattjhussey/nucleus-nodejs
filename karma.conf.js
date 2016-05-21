@@ -8,9 +8,9 @@ module.exports = function(config){
     browsers : ['Chrome'],
 
     files : [
-      'app/bower_components/angular/angular.js',
-      'app/bower_components/angular-mocks/angular-mocks.js',
-      'app/bower_components/angular-route/angular-route.js',
+      'node_modules/angular/angular.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'node_modules/angular-route/angular-route.js',
       'app/components/**/*.js',
       'app/view*/**/*.js'
     ],
