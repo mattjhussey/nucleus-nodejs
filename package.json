@@ -1,25 +1,25 @@
 {
   "description": "A starter project for AngularJS",
   "dependencies": {
-    "angular": "~1.4.0",
-    "angular-loader": "~1.4.0",
-    "angular-mocks": "~1.4.0",
-    "angular-route": "~1.4.0",
+    "angular": "1.5.5",
+    "angular-loader": "1.5.5",
+    "angular-mocks": "1.5.5",
+    "angular-route": "1.5.5",
     "html5-boilerplate": "h5bp/html5-boilerplate#b5d6e7b"
   },
   "devDependencies": {
     "copy-dir": "^0.0.8",
     "express": "^4.13.4",
-    "http-server": "^0.6.1",
+    "http-server": "0.9.0",
     "jasmine-core": "^2.3.4",
-    "karma": "~0.12",
-    "karma-chrome-launcher": "^0.1.12",
-    "karma-firefox-launcher": "^0.1.6",
-    "karma-jasmine": "^0.3.5",
-    "karma-junit-reporter": "^0.2.2",
-    "protractor": "^2.1.0",
-    "rimraf": "^2.5.2",
-    "shelljs": "^0.2.6"
+    "karma": "0.13.22",
+    "karma-chrome-launcher": "1.0.1",
+    "karma-firefox-launcher": "1.0.0",
+    "karma-jasmine": "1.0.2",
+    "karma-junit-reporter": "1.0.0",
+    "protractor": "3.3.0",
+    "rimraf": "2.5.2",
+    "shelljs": "0.7.0"
   },
   "license": "MIT",
   "name": "angular-seed",
