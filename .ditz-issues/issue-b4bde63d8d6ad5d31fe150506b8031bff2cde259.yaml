@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Reogranise to have a resulting build folder
+desc: Currently the code is static inside app. Change this so there is a resulting folder created from static assets and dynamically built files.
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-21 11:39:26.230000 Z
+references: []
+
+id: b4bde63d8d6ad5d31fe150506b8031bff2cde259
+log_events: 
+- - 2016-05-21 11:39:26.233000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""
