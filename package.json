@@ -8,6 +8,7 @@
     "html5-boilerplate": "h5bp/html5-boilerplate#b5d6e7b"
   },
   "devDependencies": {
+    "copy-dir": "^0.0.8",
     "express": "^4.13.4",
     "http-server": "^0.6.1",
     "jasmine-core": "^2.3.4",
@@ -17,6 +18,7 @@
     "karma-jasmine": "^0.3.5",
     "karma-junit-reporter": "^0.2.2",
     "protractor": "^2.1.0",
+    "rimraf": "^2.5.2",
     "shelljs": "^0.2.6"
   },
   "license": "MIT",
@@ -24,15 +26,22 @@
   "private": true,
   "repository": "https://github.com/angular/angular-seed",
   "scripts": {
+
+    "precompile": "npm run compile:clean",
+    "compile": "node utilities/copy-files.js static app",
+
+    "precompile:clean": "npm install",
+    "compile:clean": "rimraf app",
+    
     "preinstall": "npm prune",
 
-    "preprotractor": "npm run update-webdriver",
+    "preprotractor": "npm run update-webdriver && npm run compile",
     "protractor": "protractor e2e-tests/protractor.conf.js",
 
-    "prestart": "npm install",
+    "prestart": "npm install && npm run compile",
     "start": "http-server -a localhost -p 8000 -c-1",
 
-    "pretest": "npm install",
+    "pretest": "npm install && npm run compile",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",
 

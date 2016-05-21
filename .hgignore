@@ -2,8 +2,14 @@
 ^app\/bower_components\/.*$
 ^node_modules\/.*$
 
+# Build files and directories
+^app\/.*$
+
 # Ditz
 ^\.ditz-cache$
+
+# Emacs
+^.*~$
 
 # Logs
 ^npm-debug\.log$
