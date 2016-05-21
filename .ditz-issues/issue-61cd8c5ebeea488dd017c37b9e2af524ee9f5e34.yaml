@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Remove .gitignore
+desc: .gitignore is not used. Check if it might be used by npm or similar. If not, remove.
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-21 11:10:48.261000 Z
+references: []
+
+id: 61cd8c5ebeea488dd017c37b9e2af524ee9f5e34
+log_events: 
+- - 2016-05-21 11:10:48.263000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

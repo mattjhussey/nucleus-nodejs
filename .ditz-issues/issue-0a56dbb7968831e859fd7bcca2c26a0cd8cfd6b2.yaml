@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Update dependency versions
+desc: Make the versions explicit to avoid accidental build issues at the top level. Won't stop problems with dependencies of dependencies but there's not a lot we can do about that while using package managers."
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-21 11:13:05.758000 Z
+references: []
+
+id: 0a56dbb7968831e859fd7bcca2c26a0cd8cfd6b2
+log_events: 
+- - 2016-05-21 11:13:05.761000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

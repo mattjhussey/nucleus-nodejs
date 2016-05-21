@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Update license file correctly.
+desc: ""
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-21 11:11:33.332000 Z
+references: []
+
+id: 98648fd4e940a657cc22c4a757a1c1783a3ae840
+log_events: 
+- - 2016-05-21 11:11:33.335000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""
