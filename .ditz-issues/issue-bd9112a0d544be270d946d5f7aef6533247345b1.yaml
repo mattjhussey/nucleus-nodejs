@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add documentation.
+desc: jsdoc seems most popular.
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-21 21:27:58.111000 Z
+references: []
+
+id: bd9112a0d544be270d946d5f7aef6533247345b1
+log_events: 
+- - 2016-05-21 21:27:58.114000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""
