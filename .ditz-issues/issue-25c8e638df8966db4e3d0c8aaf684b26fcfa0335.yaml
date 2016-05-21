@@ -3,10 +3,10 @@ title: Remove travis.yml
 desc: There is no plan to use travis so remove it.
 type: :task
 component: nodejsbaseline
-release: 
+release: "1.0"
 reporter: Matthew Hussey <matthew.hussey@googlemail.com>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2016-05-21 11:11:16.549000 Z
 references: []
 
@@ -15,4 +15,16 @@ log_events:
 - - 2016-05-21 11:11:16.552000 Z
   - Matthew Hussey <matthew.hussey@googlemail.com>
   - created
+  - ""
+- - 2016-05-21 20:24:01.363000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - changed status from unstarted to in progress
+  - ""
+- - 2016-05-21 20:25:02.754000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - closed with disposition fixed
+  - ""
+- - 2016-05-21 20:25:14.618000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - assigned to release 1.0 from unassigned
   - ""
