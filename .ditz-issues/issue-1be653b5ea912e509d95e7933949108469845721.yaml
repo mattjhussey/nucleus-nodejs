@@ -3,7 +3,7 @@ title: Add server to protractor tests so that it the tests can be automated.
 desc: The protractor tests currently require a server to have been started. Add a step in the tests that starts a server (and stops it).
 type: :task
 component: nodejsbaseline
-release: 
+release: "1.0"
 reporter: Matthew Hussey <matthew.hussey@googlemail.com>
 status: :closed
 disposition: :fixed
@@ -23,4 +23,8 @@ log_events:
 - - 2016-05-21 11:31:08.490000 Z
   - Matthew Hussey <matthew.hussey@googlemail.com>
   - closed with disposition fixed
+  - ""
+- - 2016-05-21 11:36:12.444000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - assigned to release 1.0 from unassigned
   - ""
