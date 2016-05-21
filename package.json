@@ -35,15 +35,16 @@
     
     "preinstall": "npm prune",
 
-    "preprotractor": "npm run update-webdriver && npm run compile",
+    "prekarma": "npm install && npm run compile",
+    "karma": "karma start karma.conf.js --single-run",
+
+    "preprotractor": "npm install && npm run update-webdriver && npm run compile",
     "protractor": "protractor e2e-tests/protractor.conf.js",
 
     "prestart": "npm install && npm run compile",
     "start": "http-server -a localhost -p 8000 -c-1",
 
-    "pretest": "npm install && npm run compile",
-    "test": "karma start karma.conf.js",
-    "test-single-run": "karma start karma.conf.js  --single-run",
+    "test": "npm run karma && npm run protractor",
 
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
