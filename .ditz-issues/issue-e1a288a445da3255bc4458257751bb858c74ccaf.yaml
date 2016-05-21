@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Name package.json tasks by task not tool
+desc: protractor should be system test, or e2etest. test should be all tests to be happy the code is working. karma should be uitests, clienttests or similar. Mocha would be unit tests...
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-21 10:42:14.095000 Z
+references: []
+
+id: e1a288a445da3255bc4458257751bb858c74ccaf
+log_events: 
+- - 2016-05-21 10:42:14.097000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - The reason for this is that tools can change but the tasks remain. It will be easier to read if the scripts are tasks. There is, possibly, nothing wrong with having a task called "karma" but it should be triggered by uitests to abstract that in case of changes or additions (using karma and something else).
