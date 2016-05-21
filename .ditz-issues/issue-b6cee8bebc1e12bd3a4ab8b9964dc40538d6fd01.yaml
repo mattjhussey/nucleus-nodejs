@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Remove Bower
+desc: It is easier to use NPM (in my opinion) and easier to maintain only one set of dependencies.
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-21 10:24:02.620000 Z
+references: []
+
+id: b6cee8bebc1e12bd3a4ab8b9964dc40538d6fd01
+log_events: 
+- - 2016-05-21 10:24:02.622000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

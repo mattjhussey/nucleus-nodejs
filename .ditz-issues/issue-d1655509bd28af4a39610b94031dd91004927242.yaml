@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Alphabetise config files, etc.
+desc: Debatable, but seems to make merging easier if everyone puts things at the same place in a file.
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-21 10:25:14.998000 Z
+references: []
+
+id: d1655509bd28af4a39610b94031dd91004927242
+log_events: 
+- - 2016-05-21 10:25:15 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""
