@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add Firefox to tests.
+desc: ""
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-22 16:26:33.602000 Z
+references: []
+
+id: c6f2182d9e595856fcff5c1a451340e9ca66a73b
+log_events: 
+- - 2016-05-22 16:26:33.605000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

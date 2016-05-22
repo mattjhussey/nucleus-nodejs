@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add a canvas library.
+desc: pixi or easel?
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-22 16:27:25.726000 Z
+references: []
+
+id: 2831716af52eb0ebefc807fd409e3c1a6b7dedb2
+log_events: 
+- - 2016-05-22 16:27:25.729000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add D3.js
+desc: Not sure if it should be part of the nucleus or not...
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-22 16:29:43.714000 Z
+references: []
+
+id: 8b3f6bcca254385bd02d6b380a6261975ee9de51
+log_events: 
+- - 2016-05-22 16:29:43.717000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""

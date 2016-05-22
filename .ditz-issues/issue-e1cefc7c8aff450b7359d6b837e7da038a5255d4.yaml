@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Add Cesium
+desc: Not sure if it should be part of the nucleus or not...
+type: :task
+component: nodejsbaseline
+release: 
+reporter: Matthew Hussey <matthew.hussey@googlemail.com>
+status: :unstarted
+disposition: 
+creation_time: 2016-05-22 16:29:11.413000 Z
+references: []
+
+id: e1cefc7c8aff450b7359d6b837e7da038a5255d4
+log_events: 
+- - 2016-05-22 16:29:11.416000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - created
+  - ""
