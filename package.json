@@ -21,6 +21,7 @@
     "karma-jasmine": "1.0.2",
     "karma-junit-reporter": "1.0.0",
     "protractor": "3.3.0",
+    "pug-lint": "2.1.7",
     "rimraf": "2.5.2",
     "shelljs": "0.7.0"
   },
@@ -50,10 +51,13 @@
     "prekarma": "npm install && npm run compile",
     "karma": "karma start karma.conf.js --single-run",
 
-    "lint": "npm run jscs && npm run jshint",
+    "lint": "npm run jscs && npm run jshint && npm run puglint",
 
     "preprotractor": "npm install && npm run update-webdriver && npm run compile",
     "protractor": "protractor e2e-tests/protractor.conf.js",
+
+    "prepuglint": "npm install",
+    "puglint": "pug-lint .",
 
     "prestart": "npm install && npm run compile",
     "start": "http-server -a localhost -p 8000 -c-1",
