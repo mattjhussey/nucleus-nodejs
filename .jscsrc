@@ -1,0 +1,6 @@
+{
+  "excludeFiles": [
+    "app/**/*"
+  ],
+  "preset": "google"
+}

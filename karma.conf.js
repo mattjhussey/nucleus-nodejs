@@ -1,13 +1,15 @@
-module.exports = function(config){
+'use strict';
+
+module.exports = function(config) {
   config.set({
 
-    autoWatch : true,
+    autoWatch: true,
 
-    basePath : './',
+    basePath: './',
 
-    browsers : ['Chrome'],
+    browsers: ['Chrome'],
 
-    files : [
+    files: [
       'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'node_modules/angular-route/angular-route.js',
@@ -17,12 +19,12 @@ module.exports = function(config){
 
     frameworks: ['jasmine'],
 
-    junitReporter : {
+    junitReporter: {
       outputFile: 'test_out/unit.xml',
       suite: 'unit'
     },
 
-    plugins : [
+    plugins: [
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-jasmine',

@@ -3,10 +3,10 @@ title: Add JS static analysis
 desc: Add static analysis of Javascript.
 type: :task
 component: nodejsbaseline
-release: 
+release: "1.0"
 reporter: Matthew Hussey <matthew.hussey@googlemail.com>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2016-05-20 18:04:00.589000 Z
 references: []
 
@@ -15,4 +15,16 @@ log_events:
 - - 2016-05-20 18:04:00.591000 Z
   - Matthew Hussey <matthew.hussey@googlemail.com>
   - created
+  - ""
+- - 2016-05-21 21:53:58.719000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - changed status from unstarted to in progress
+  - ""
+- - 2016-05-22 16:22:43.499000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - closed with disposition fixed
+  - ""
+- - 2016-05-22 16:22:48.503000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - assigned to release 1.0 from unassigned
   - ""

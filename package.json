@@ -12,6 +12,8 @@
     "express": "^4.13.4",
     "http-server": "0.9.0",
     "jasmine-core": "^2.3.4",
+    "jscs": "3.0.3",
+    "jshint": "2.9.2",
     "karma": "0.13.22",
     "karma-chrome-launcher": "1.0.1",
     "karma-firefox-launcher": "1.0.0",
@@ -35,8 +37,16 @@
     
     "preinstall": "npm prune",
 
+    "prejscs": "npm install",
+    "jscs": "jscs .",
+
+    "prejshint": "npm install",
+    "jshint": "jshint .",
+
     "prekarma": "npm install && npm run compile",
     "karma": "karma start karma.conf.js --single-run",
+
+    "lint": "npm run jscs && npm run jshint",
 
     "preprotractor": "npm install && npm run update-webdriver && npm run compile",
     "protractor": "protractor e2e-tests/protractor.conf.js",
