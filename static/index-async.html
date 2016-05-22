@@ -4,12 +4,15 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="../node_modules/html5-boilerplate/css/normalize.css">
   <link rel="stylesheet" href="../node_modules/html5-boilerplate/css/main.css">
+  <!-- htmllint tag-bans="false" -->
   <style>
     [ng-cloak] {
       display: none;
     }
   </style>
+  <!-- htmllint tag-bans="$previous" -->
   <script src="../node_modules/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <!-- htmllint indent-width="false" -->
   <script>
     // include angular loader, which allows the files to load in any order
     //@@NG_LOADER_START@@
@@ -41,18 +44,19 @@
       angular.bootstrap(document, ['myApp']);
     });
   </script>
+  <!-- htmllint indent-width="$previous" -->
   <title>My AngularJS App</title>
   <link rel="stylesheet" href="app.css">
 </head>
-<body ng-cloak>
+<body ng-cloak="">
   <ul class="menu">
     <li><a href="#/view1">view1</a></li>
     <li><a href="#/view2">view2</a></li>
   </ul>
 
-  <div ng-view></div>
+  <div ng-view=""></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+  <div>Angular seed app: v<span app-version=""></span></div>
 
 </body>
 </html>
