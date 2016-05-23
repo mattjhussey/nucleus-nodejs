@@ -8,6 +8,9 @@
 # Ditz
 ^\.ditz-cache$
 
+# Documentation
+^docs\/.*$
+
 # Emacs
 ^.*~$
 

@@ -3,7 +3,7 @@ title: Add Pug static analysis
 desc: puglint?
 type: :task
 component: nodejsbaseline
-release: 
+release: "1.0"
 reporter: Matthew Hussey <matthew.hussey@googlemail.com>
 status: :closed
 disposition: :fixed
@@ -23,4 +23,8 @@ log_events:
 - - 2016-05-22 18:52:30.944000 Z
   - Matthew Hussey <matthew.hussey@googlemail.com>
   - closed with disposition fixed
+  - ""
+- - 2016-05-23 21:15:53.866000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - assigned to release 1.0 from unassigned
   - ""

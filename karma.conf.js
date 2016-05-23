@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * Configure karma test runner.
+ *
+ * @param {object} config - Karma object to configure.
+ */
 module.exports = function(config) {
   config.set({
 
