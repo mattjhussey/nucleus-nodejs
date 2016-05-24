@@ -28,6 +28,9 @@
     },
     "utilities/**/*": {
       "node": true
+    },
+    "webpack.config.js": {
+      "node": true
     }
   }
 }
