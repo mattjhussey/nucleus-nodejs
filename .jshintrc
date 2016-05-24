@@ -13,6 +13,7 @@
 	"by": false,
 	"element": false
       },
+      "esversion": 6,
       "jasmine": true,
       "node": true
     },

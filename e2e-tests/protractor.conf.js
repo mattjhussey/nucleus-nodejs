@@ -6,7 +6,12 @@ var path = require('path');
 var server;
 
 exports.config = {
-  afterLaunch: function(exitCode) {
+  /**
+   * Clode the Web Server.
+   *
+   * @returns {Promise} Asynchronous promise to close the Web Server.
+   */
+  afterLaunch: function() {
     console.log('Web Server: Stopping');
     var promise = new Promise(function(resolve, reject) {
       server.close(function() {
@@ -16,11 +21,14 @@ exports.config = {
     });
     return promise;
   },
-  
+
   allScriptsTimeout: 11000,
 
   baseUrl: 'http://localhost:8000/app/',
 
+  /**
+   * Start a single Web Server for all protractor sessions.
+   */
   beforeLaunch: function() {
     console.log('Web Server: Starting');
     var app = express();
