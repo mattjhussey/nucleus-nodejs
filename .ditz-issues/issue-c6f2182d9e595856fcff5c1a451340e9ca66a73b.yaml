@@ -3,10 +3,10 @@ title: Add Firefox to tests.
 desc: ""
 type: :task
 component: nodejsbaseline
-release: 
+release: "1.0"
 reporter: Matthew Hussey <matthew.hussey@googlemail.com>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2016-05-22 16:26:33.602000 Z
 references: []
 
@@ -15,4 +15,16 @@ log_events:
 - - 2016-05-22 16:26:33.605000 Z
   - Matthew Hussey <matthew.hussey@googlemail.com>
   - created
+  - ""
+- - 2016-05-23 21:18:41.667000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - changed status from unstarted to in progress
+  - ""
+- - 2016-05-24 19:15:09.961000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - closed with disposition fixed
+  - Firefox configuration has been added and the Web Server start up and close fixed to allow concurrent sessions.
+- - 2016-05-24 19:15:13.751000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - assigned to release 1.0 from unassigned
   - ""

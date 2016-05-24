@@ -12,7 +12,7 @@ module.exports = function(config) {
 
     basePath: './',
 
-    browsers: ['Chrome'],
+    browsers: ['Chrome', 'Firefox'],
 
     files: [
       'node_modules/angular/angular.js',

@@ -2,27 +2,7 @@
 
 /* https://github.com/angular/protractor/blob/master/docs/toc.md */
 
-var express = require('express');
-var path = require('path');
-
 describe('my app', function() {
-
-  var server;
-
-  beforeEach(function() {
-    var app = express();
-    app.use(express.static(path.join(__dirname, '../')));
-    server = app.listen(8000);
-    server.on('connection', function(socket) {
-      socket.setTimeout(2000);
-    });
-  });
-
-  afterEach(function(done) {
-    server.close(function() {
-      done();
-    });
-  });
 
   it('should automatically redirect to /view1 when location hash/fragment ' +
      'is empty', function() {
