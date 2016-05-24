@@ -5,7 +5,7 @@ type: :task
 component: nodejsbaseline
 release: 
 reporter: Matthew Hussey <matthew.hussey@googlemail.com>
-status: :unstarted
+status: :in_progress
 disposition: 
 creation_time: 2016-05-20 20:46:50.111000 Z
 references: []
@@ -15,4 +15,8 @@ log_events:
 - - 2016-05-20 20:46:50.123000 Z
   - Matthew Hussey <matthew.hussey@googlemail.com>
   - created
+  - ""
+- - 2016-05-24 20:27:45.602000 Z
+  - Matthew Hussey <matthew.hussey@googlemail.com>
+  - changed status from unstarted to in progress
   - ""
