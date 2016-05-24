@@ -36,7 +36,7 @@
   "scripts": {
 
     "precompile": "npm run compile:clean",
-    "compile": "node utilities/copy-files.js static app",
+    "compile": "node utilities/copy-files.js static app && npm run webpack",
 
     "precompile:clean": "npm install",
     "compile:clean": "rimraf app",
