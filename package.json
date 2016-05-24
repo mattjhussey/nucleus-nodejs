@@ -10,6 +10,7 @@
   "devDependencies": {
     "copy-dir": "^0.0.8",
     "csslint": "0.10.0",
+    "del-cli": "0.2.0",
     "express": "^4.13.4",
     "htmllint-cli": "htmllint/htmllint-cli#adf7a8d",
     "http-server": "0.9.0",
@@ -25,7 +26,8 @@
     "protractor": "3.3.0",
     "pug-lint": "2.1.7",
     "rimraf": "2.5.2",
-    "shelljs": "0.7.0"
+    "shelljs": "0.7.0",
+    "webpack": "1.13.1"
   },
   "license": "MIT",
   "name": "angular-seed",
@@ -82,6 +84,12 @@
 
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
+
+    "prewebpack": "npm install && npm run webpack:clean",
+    "webpack": "webpack --progress --colors",
+
+    "prewebpack:clean": "npm install",
+    "webpack:clean": "del-cli app/bundle.js",
 
     "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + sed(/sourceMappingURL=angular-loader.min.js.map/,'sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map','app/bower_components/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'app/index-async.html');\""
   },
