@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  entry: './static/app.js',
+  entry: './src/app.js',
   output: {
     path: __dirname + '/app',
     filename: 'bundle.js'

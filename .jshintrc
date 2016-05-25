@@ -20,6 +20,9 @@
     "karma.conf.js": {
       "node": true
     },
+    "src/**/*": {
+      "node": true
+    },
     "static/**/*": {
       "globals": {
         "angular": false,
