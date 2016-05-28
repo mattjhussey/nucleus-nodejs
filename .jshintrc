@@ -3,7 +3,8 @@
   "overrides": {
     "*_test.js": {
       "globals": {
-        "module": false
+        "module": false,
+        "inject": false
       },
       "jasmine": true
     },
@@ -21,6 +22,9 @@
       "node": true
     },
     "src/**/*": {
+      "globals": {
+        "angular": false
+      },
       "node": true
     },
     "static/**/*": {
