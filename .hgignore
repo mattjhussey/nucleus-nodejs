@@ -1,9 +1,14 @@
-# 3rd party libraries
-^app\/bower_components\/.*$
-^node_modules\/.*$
+# Build directories
+^public\/.*$
 
-# Build files and directories
-^app\/.*$
+# Coverage
+^coverage\/.*$
+
+# Data (real data that isn't controller)
+^realStatic\/.*$
+
+# Dependencies
+^node_modules\/.*$
 
 # Ditz
 ^\.ditz-cache$
@@ -15,4 +20,4 @@
 ^.*~$
 
 # Logs
-^npm-debug\.log$
+^.*npm-debug\.log$

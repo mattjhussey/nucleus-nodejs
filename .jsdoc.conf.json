@@ -1,19 +1,30 @@
 {
   "opts": {
-    "destination": "./docs/jsdoc",
+    "destination": "./docs/",
+    "package": "./package.json",
+    "pedantic": true,
+    "private": true,
     "recurse": true
   },
   "plugins": [],
   "source": {
-    "includePattern": ".+\\.js(doc)?$",
-    "excludePattern": "(node_modules|(^|\\/|\\\\)_)"
+    "exclude": [
+      "./coverage",
+      "./docs",
+      "./node_modules",
+      "./public"
+    ],
+    "excludePattern": "(^|\\/|\\\\)_",
+    "includePattern": ".+\\.js(doc)?$"
   },
   "tags": {
-    "allowUnknownTags": false,
-    "dictionaries": ["jsdoc","closure"]
+    "allowUnknownTags": false
   },
   "templates": {
     "cleverLinks": false,
+    "default": {
+      "outputSourceFiles": true
+    },
     "monospaceLinks": false
   }
 }

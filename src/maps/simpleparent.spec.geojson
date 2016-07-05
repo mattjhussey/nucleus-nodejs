@@ -1,0 +1,42 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [10, 11],
+            [12, 10],
+            [13, 14]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "IDENTITY": "Region-Parent_1",
+        "NAME": "FirstParent"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [2, 3],
+            [1, 4],
+            [6, 3],
+            [7, 2],
+            [9, 2],
+            [4, 3]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "IDENTITY": "Region-Parent_2",
+        "NAME": "SecondParent"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

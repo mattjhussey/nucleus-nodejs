@@ -1,0 +1,17 @@
+instrumentation:
+  embed-source: true
+  excludes: [
+    'coverage/**',
+    'docs/**',
+    'e2e-tests/protractor.conf.js',
+    'e2e-tests/scenarios_test.js',
+    'gulpfile.js',
+    'karma.conf.js',
+    'public/**',
+    'src/app.js',
+    'utilities/**',
+    'webpack.config.js'
+  ]
+reporting:
+  print: none
+verbose: false

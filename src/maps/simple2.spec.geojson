@@ -1,0 +1,42 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [0, 1],
+            [1, 0],
+            [1, 1]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "IDENTITY": "Region-Simple2_1",
+        "NAME": "FirstSimple2"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [1, 2],
+            [2, 1],
+            [2, 2],
+            [2, 3],
+            [3, 2],
+            [3, 3]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "IDENTITY": "Region-Simple2_2",
+        "NAME": "SecondSimple_2"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

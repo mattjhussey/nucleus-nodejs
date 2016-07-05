@@ -1,5 +1,9 @@
 {
   "excludeFiles": [
-    "node_modules/**/*"
-  ]
+    "coverage/**",
+    "docs/**",
+    "node_modules/**",
+    "public/**"
+  ],
+  "preset": "clock"
 }

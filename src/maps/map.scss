@@ -1,0 +1,20 @@
+.REGION {
+  stroke-width: 0px;
+}
+
+$COLOURS: (
+  #DDC,
+  #DCD,
+  #DCC,
+  #CDD,
+  #CDC,
+  #CCD,
+  #CCC
+);
+
+@for $i from 1 through length($COLOURS) {
+  .REGION-COLOUR-#{$i} {
+    fill: nth($COLOURS, $i);
+    stroke: nth($COLOURS, $i);
+  }
+}

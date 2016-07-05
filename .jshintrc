@@ -1,43 +1,39 @@
 {
-  "globalstrict": true,
   "overrides": {
-    "*_test.js": {
-      "globals": {
-        "module": false,
-        "inject": false
-      },
-      "jasmine": true
-    },
-    "e2e-tests/**/*": {
-      "globals": {
-	"browser": false,
-	"by": false,
-	"element": false
-      },
-      "esversion": 6,
-      "jasmine": true,
-      "node": true
-    },
     "karma.conf.js": {
       "node": true
     },
-    "src/**/*": {
-      "globals": {
-        "angular": false
-      },
+    "e2e-tests/protractor.conf.js": {
+      "esversion": 6,
       "node": true
     },
-    "static/**/*": {
+    "e2e-tests/**/*.spec.js": {
+      "globals": {
+        "browser": false,
+        "by": false,
+        "element": false
+      },
+      "mocha": true,
+      "node": true
+    },
+    "gulpfile.js": {
+      "esversion": 6,
+      "node": true
+    },
+    "src/**/*.js": {
+      "node": true
+    },
+    "src/**/*.spec.js": {
       "globals": {
         "angular": false,
-	"inject": false
-      }
-    },
-    "utilities/**/*": {
-      "node": true
+        "inject": false,
+        "MouseEvent": false
+      },
+      "mocha": true
     },
     "webpack.config.js": {
       "node": true
     }
-  }
+  },
+  "strict": "global"
 }

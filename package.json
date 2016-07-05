@@ -1,99 +1,88 @@
 {
-  "description": "A starter project for AngularJS",
   "dependencies": {
-    "angular": "1.5.5",
-    "angular-loader": "1.5.5",
-    "angular-mocks": "1.5.5",
-    "angular-route": "1.5.5",
-    "html5-boilerplate": "h5bp/html5-boilerplate#b5d6e7b"
+    "angular": "1.5.x",
+    "angular-animate": "1.5.x",
+    "angular-aria": "1.5.x",
+    "angular-loader": "1.5.x",
+    "angular-material": "1.0.x",
+    "angular-mocks": "1.5.x",
+    "angular-route": "1.5.x",
+    "html5-boilerplate": "h5bp/html5-boilerplate#5.3.0"
   },
+  "description": "Example app for angular",
   "devDependencies": {
-    "copy-dir": "^0.0.8",
-    "css-loader": "0.23.1",
-    "csslint": "0.10.0",
-    "del-cli": "0.2.0",
-    "express": "^4.13.4",
-    "htmllint-cli": "htmllint/htmllint-cli#adf7a8d",
-    "http-server": "0.9.0",
-    "jasmine-core": "^2.3.4",
-    "jscs": "3.0.3",
-    "jsdoc": "3.4.0",
-    "jshint": "2.9.2",
-    "karma": "0.13.22",
-    "karma-chrome-launcher": "1.0.1",
-    "karma-firefox-launcher": "1.0.0",
-    "karma-jasmine": "1.0.2",
-    "karma-junit-reporter": "1.0.0",
-    "protractor": "3.3.0",
-    "pug-lint": "2.1.7",
-    "rimraf": "2.5.2",
-    "shelljs": "0.7.0",
-    "style-loader": "0.13.1",
-    "webpack": "1.13.1"
+    "babyparse": "0.4.x",
+    "chai": "3.5.x",
+    "chai-as-promised": "5.3.x",
+    "copy-dir": "0.0.x",
+    "css-loader": "0.23.x",
+    "csslint": "CSSLint/csslint#9225d31",
+    "d3": "3.5.x",
+    "exports-loader": "0.6.x",
+    "express": "4.13.x",
+    "gulp": "3.9.x",
+    "gulp-help": "1.6.x",
+    "html-loader": "0.4.x",
+    "htmllint-cli": "htmllint/htmllint-cli#f43f1fd",
+    "http-server": "0.9.x",
+    "imports-loader": "0.6.x",
+    "istanbul": "0.4.x",
+    "istanbul-instrumenter-loader": "0.2.x",
+    "jquery": "2.2.x",
+    "jscs": "3.0.x",
+    "jsdoc": "3.4.x",
+    "json-loader": "0.5.x",
+    "jshint": "2.9.x",
+    "karma": "0.13.x",
+    "karma-chrome-launcher": "1.0.x",
+    "karma-coverage": "1.0.x",
+    "karma-firefox-launcher": "1.0.x",
+    "karma-junit-reporter": "1.0.x",
+    "karma-mocha": "1.0.x",
+    "karma-mocha-reporter": "2.0.x",
+    "karma-sourcemap-loader": "0.3.x",
+    "karma-webpack": "1.7.x",
+    "mocha": "2.5.x",
+    "node-sass": "3.7.x",
+    "protractor": "3.3.x",
+    "pug-lint": "2.1.x",
+    "rimraf": "2.5.x",
+    "sass-lint": "1.7.x",
+    "sass-loader": "3.2.x",
+    "shelljs": "0.7.x",
+    "sinon": "sinonjs/sinon#36f571f",
+    "style-loader": "0.13.x",
+    "webpack": "1.13.x",
+    "webpack-dev-server": "1.14.x"
   },
-  "license": "MIT",
-  "name": "angular-seed",
+  "license": "",
+  "name": "mjhtest",
   "private": true,
-  "repository": "https://github.com/angular/angular-seed",
   "scripts": {
 
-    "precompile": "npm run compile:clean",
-    "compile": "node utilities/copy-files.js static app && npm run webpack",
+    "coverage": "npm run gulp -- coverage",
 
-    "precompile:clean": "npm install",
-    "compile:clean": "rimraf app",
+    "documentation": "npm run gulp -- documentation",
 
-    "precsslint": "npm install",
-    "csslint": "csslint .",
+    "pregulp": "npm install",
+    "gulp": "gulp",
 
-    "documentation": "npm run jsdoc",
+    "gulp:noinstall": "gulp",
 
-    "prehtmllint": "npm install",
-    "htmllint": "htmllint static/**/*.html",
-    
-    "preinstall": "npm prune",
+    "help": "npm run gulp -- help",
 
-    "prejscs": "npm install",
-    "jscs": "jscs .",
+    "preinstall": "npm prune && npm update",
 
-    "prejsdoc": "npm run jsdoc:generate",
-    "jsdoc": "docs\\jsdoc\\index.html",
+    "lint": "npm run gulp -- lint",
 
-    "prejsdoc:clean": "npm install",
-    "jsdoc:clean": "rimraf ./docs/jsdoc",
+    "protractor": "npm run gulp -- protractor",
 
-    "prejsdoc:generate": "npm run jsdoc:clean && npm install",
-    "jsdoc:generate": "jsdoc --configure .jsdoc.conf.json .",
+    "start": "npm run gulp -- start",
 
-    "prejshint": "npm install",
-    "jshint": "jshint .",
+    "start:dev": "npm run gulp -- start:dev-server",
 
-    "prekarma": "npm install && npm run compile",
-    "karma": "karma start karma.conf.js --single-run",
-
-    "lint": "npm run csslint && npm run jscs && npm run jshint && npm run puglint",
-
-    "preprotractor": "npm install && npm run update-webdriver && npm run compile",
-    "protractor": "protractor e2e-tests/protractor.conf.js",
-
-    "prepuglint": "npm install",
-    "puglint": "pug-lint .",
-
-    "prestart": "npm install && npm run compile",
-    "start": "http-server -a localhost -p 8000 -c-1",
-
-    "test": "npm run karma && npm run protractor",
-
-    "preupdate-webdriver": "npm install",
-    "update-webdriver": "webdriver-manager update",
-
-    "prewebpack": "npm install && npm run webpack:clean",
-    "webpack": "webpack --progress --colors",
-
-    "prewebpack:clean": "npm install",
-    "webpack:clean": "del-cli app/bundle.js",
-
-    "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + sed(/sourceMappingURL=angular-loader.min.js.map/,'sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map','app/bower_components/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'app/index-async.html');\""
+    "test": "npm run gulp -- test"
   },
-  "version": "0.0.0"
+  "repository": "",
+  "version": "0.0.1"
 }

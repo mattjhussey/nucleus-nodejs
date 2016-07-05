@@ -1,0 +1,23 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [0, 1],
+            [1, 1],
+            [1, 0]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "IDENTITY": "Region-Simple1",
+        "NAME": "FirstSimple1"
+      },
+      "type": "Feature"
+    }
+  ],
+  "parent": "SimpleParent",
+  "type": "FeatureCollection"
+}

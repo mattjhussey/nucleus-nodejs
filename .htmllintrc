@@ -1,10 +1,7 @@
 {
-    "attr-name-ignore-regex": "^(app-version|http-equiv|ng-.*)$",
-
+    "attr-name-ignore-regex": "^((app|ng)-.*|http-equiv)$",
     "id-class-ignore-regex": "^no-js$",
-
     "indent-width": 2,
-    
     // names of npm modules to load into htmllint
     "plugins": []
 
