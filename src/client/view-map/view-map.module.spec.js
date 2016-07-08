@@ -19,7 +19,7 @@ describe('mjhtest.view-map module', function() {
     });
   beforeEach(
     'Load the test module',
-    angular.mock.module(require('view-map')));
+    angular.mock.module(require('mjhtest-view-map')));
   beforeEach(
     'Fake the mjhtest-graphs directive',
     angular.mock.module(function(_$compileProvider_) {

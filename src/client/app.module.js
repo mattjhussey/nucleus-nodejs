@@ -4,7 +4,7 @@
   var angular = require('angular');
 
   var dependencies = [
-    require('view-map'),
+    require('mjhtest-view-map'),
   ];
 
   module.exports = angular

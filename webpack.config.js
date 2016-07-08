@@ -6,7 +6,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: {
-    app: ['./src/index.js']
+    app: ['./src/client/index.js']
   },
   module: {
     unknownContextCritical: false,
@@ -37,12 +37,11 @@ module.exports = {
   resolve: {
     root: path.resolve(__dirname),
     alias: {
-      'mjhtest-filter-panel': 'src/filter-panel',
-      'mjhtest-graphs': 'src/graphs',
-      'mjhtest-info-panel': 'src/info-panel',
-      'mjhtest-maps': 'src/maps',
-      'view-map': 'src/view-map',
-      stylesheets: 'src/stylesheets'
+      'mjhtest-filter-panel': 'src/client/filter-panel',
+      'mjhtest-graphs': 'src/client/graphs',
+      'mjhtest-info-panel': 'src/client/info-panel',
+      'mjhtest-maps': 'src/client/maps',
+      'mjhtest-view-map': 'src/client/view-map'
     }
   }
 };
