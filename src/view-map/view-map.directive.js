@@ -26,24 +26,34 @@
       $scope.onFilterChanged = onFilterChanged;
       $scope.onRegionChanged = onRegionChanged;
 
+      /**
+       * Build the filtered graph string.
+       *
+       * @returns {Object} region_filter or if there is no filter then just region.
+       */
       function buildGraph() {
         var graph = $scope.region;
-        if($scope.filter !== undefined) {
+        if ($scope.filter !== undefined) {
           graph += '_' + $scope.filter;
         }
         return graph;
       }
 
       /**
-       * Callback function for child elements to update the selection.
+       * Callback function for child elements to update the region.
        *
-       * @param {object} selected - The requested selection.
+       * @param {object} region - The requested region.
        */
       function onRegionChanged(region) {
         $scope.region = region;
         $scope.graph = buildGraph();
       }
 
+      /**
+       * Callback function for child elements to update the filter.
+       *
+       * @param {Object} filter - The requested filter.
+       */
       function onFilterChanged(filter) {
         $scope.filter = filter;
         $scope.graph = buildGraph();

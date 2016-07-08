@@ -8,6 +8,7 @@ describe('mjhtest.view-map module', function() {
   var html = '<mjhtest-view-map></mjhtest-view-map>';
   var sandbox;
   var $scope;
+  var filterPanelScope;
   var graphScope;
   var mapScope;
 
@@ -24,6 +25,11 @@ describe('mjhtest.view-map module', function() {
     angular.mock.module(function(_$compileProvider_) {
       _$compileProvider_.directive('mjhtestGraph', directive);
 
+      /**
+       * Directive configuration function.
+       *
+       * @returns {Object} Data Definition Object for Directive
+       */
       function directive() {
         return {
           link: link,
@@ -36,8 +42,46 @@ describe('mjhtest.view-map module', function() {
           terminal: true
         };
 
+        /**
+         * UI Logic
+         *
+         * @param {Object} scope - Scope for UI.
+         */
         function link(scope) {
           graphScope = scope;
+        }
+      }
+    })
+  );
+  beforeEach(
+    'Fake the mjhtest-filter-panel directive',
+    angular.mock.module(function(_$compileProvider_) {
+      _$compileProvider_.directive('mjhtestFilterPanel', directive);
+
+      /**
+       * Directive configuration function.
+       *
+       * @returns {Object} Data Definition Object for Directive
+       */
+      function directive() {
+        return {
+          link: link,
+          priority: 100,
+          restrict: 'E',
+          scope: {
+            selected: '@selected'
+          },
+          template: '<fake-mjhtest-filter-panel></fake-mjhtest-filter-panel>',
+          terminal: true
+        };
+
+        /**
+         * UI Logic
+         *
+         * @param {Object} scope - Scope for UI.
+         */
+        function link(scope) {
+          filterPanelScope = scope;
         }
       }
     })
@@ -125,12 +169,29 @@ describe('mjhtest.view-map module', function() {
       });
     });
 
+    describe('change graph selection', function() {
+      var newGraph = 'ChangedGraph';
+      beforeEach(
+        'Change the graph selection',
+        function() {
+          $scope.graph = newGraph;
+          $scope.$digest();
+        }
+      );
+
+      describe('fake graph', function() {
+        it('should update the graph with the new selection', function() {
+          expect(graphScope.selected).to.equal(newGraph);
+        });
+      });
+    });
+
     describe('change map selection', function() {
       var newMap = 'ChangedMap';
       beforeEach(
         'Change the map selection',
         function() {
-          $scope.selected = newMap;
+          $scope.region = newMap;
           $scope.$digest();
         }
       );
@@ -138,12 +199,6 @@ describe('mjhtest.view-map module', function() {
       describe('fake map', function() {
         it('should update the map with the new selection', function() {
           expect(mapScope.selected).to.equal(newMap);
-        });
-      });
-
-      describe('fake graph', function() {
-        it('should update the graph with the new selection', function() {
-          expect(graphScope.selected).to.equal(newMap);
         });
       });
     });
@@ -155,11 +210,8 @@ describe('mjhtest.view-map module', function() {
         function() {
           mapScope.onSelected({
             selected: selected});
+          $scope.$digest();
         });
-
-      it('should update itself to the new selection', function() {
-        expect($scope.selected).to.equal(selected);
-      });
 
       it('should update the map with the new selection', function() {
         expect(mapScope.selected).to.equal(selected);

@@ -264,6 +264,24 @@ gulp.task('lint', ['csslint',
                    'puglint',
                    'sasslint']);
 
+gulp.task('lint:watch', function() {
+  return gulp.watch(
+    [
+      '*.*',
+      './e2e-tests/*.*',
+      './src/**/*.*',
+      './static/**/*.*',
+      './utilities/**/*.*'
+    ],
+    [
+      'csslint',
+      'htmllint',
+      'jscs',
+      'jshint',
+      'puglint',
+      'sasslint']);
+});
+
 gulp.task('puglint', execute('pug-lint src/ static/'));
 
 gulp.task('sasslint',

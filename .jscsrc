@@ -2,6 +2,7 @@
   "excludeFiles": [
     "coverage/**",
     "docs/**",
+    "node_modules/**",
     "public/**",
     "stage/**"
   ],
